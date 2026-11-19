@@ -5,6 +5,7 @@
 
 import { BrowserRouter } from 'react-router-dom';
 import { AppRoutes } from './routes/AppRoutes';
+import { PwaControls } from './components/pwa/PwaControls';
 
 /**
  * Componente principal da aplicação
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <PwaControls />
       <AppRoutes />
     </BrowserRouter>
   );
